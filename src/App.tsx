@@ -7,7 +7,7 @@ import PrimarySearchAppBar from "./organisms/AppBar";
 
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <Home />,
   },
   {
