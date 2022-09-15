@@ -19,9 +19,9 @@ import {
 } from "@mui/icons-material";
 import ConciergeCard from "../molecules/ConciergeCard";
 import { concierges } from "../data/concierges";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link, useNavigate } from "react-router-dom";
 
-type FormValues = {
+export type FormValues = {
   hasBudget: boolean;
   items: {
     material: string;
@@ -57,12 +57,14 @@ const Order: React.FC = () => {
 
   const watchHasBudget = watch("hasBudget", false);
 
-  const onSubmit = (data: FormValues) => console.log(data);
+  const onSubmit = (data: FormValues) =>
+    navigate("/confirm", { state: { data: data } });
 
   const search = useLocation().search;
   const query = new URLSearchParams(search);
   const conciergeId = query.get("conciergeId");
 
+  const navigate = useNavigate();
   return (
     <>
       {conciergeId !== null ? (
@@ -113,7 +115,7 @@ const Order: React.FC = () => {
                       <TextField
                         sx={{ flex: 2 }}
                         size="small"
-                        type="string"
+                        type="number"
                         label="予算"
                         InputProps={{
                           startAdornment: (
@@ -182,7 +184,7 @@ const Order: React.FC = () => {
             })
           }
         >
-          行を追加する
+          品物を追加する
         </Button>
         <Box textAlign="center" mt={2}>
           <Button
