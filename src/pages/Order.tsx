@@ -19,7 +19,7 @@ import {
 } from "@mui/icons-material";
 import ConciergeCard from "../molecules/ConciergeCard";
 import { concierges } from "../data/concierges";
-import { useLocation, Link, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export type FormValues = {
   hasBudget: boolean;
