@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Order from "./pages/Order";
 import PrimarySearchAppBar from "./organisms/AppBar";
 import Confirm from "./pages/Confirm";
+import Chat from "./pages/Chat";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/confirm",
     element: <Confirm />,
+  },
+  {
+    path: "/chat",
+    element: <Chat />,
   },
 ]);
 
