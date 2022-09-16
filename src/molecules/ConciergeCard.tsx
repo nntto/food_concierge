@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import { Concierge } from "../data/concierges";
-import { CardActionArea, CardActions, Button } from "@mui/material";
+import { CardActions, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 export default function ConciergeCard({
@@ -34,7 +34,7 @@ export default function ConciergeCard({
           disableElevation
           sx={{ width: "50%" }}
           onClick={() => {
-            navigate(`/order?conciergeId=${conciergeId}`);
+            navigate(`/chat?conciergeId=${conciergeId}`);
           }}
         >
           相談する
@@ -44,7 +44,7 @@ export default function ConciergeCard({
           disableElevation
           sx={{ width: "50%" }}
           onClick={() => {
-            navigate(`/chat?conciergeId=${conciergeId}`);
+            navigate(`/order?conciergeId=${conciergeId}`);
           }}
         >
           注文する
