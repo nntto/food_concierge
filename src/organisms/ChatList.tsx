@@ -7,7 +7,11 @@ const MyMessage = ({ text }: { text: string }) => (
   <Box sx={{ display: "flex", flexDirection: "row-reverse" }}>
     <Paper
       elevation={3}
-      sx={{ maxWidth: "70%", width: "fit-content", backgroundColor: "silver" }}
+      sx={{
+        maxWidth: "70%",
+        width: "fit-content",
+        backgroundColor: "#F5F5F5",
+      }}
     >
       {text}
     </Paper>
