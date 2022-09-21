@@ -1,6 +1,6 @@
 # 食材コンシェルジュ
-- [食材コンシェルジュ.pdf](https://github.com/nntto/food_concierge/files/9612727/default.pdf)
-- デモ：https://food-concierge.web.app/
+- [発表資料](https://github.com/nntto/food_concierge/blob/main/%E9%A3%9F%E6%9D%90%E3%82%B3%E3%83%B3%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B7%E3%82%99%E3%83%A5.pdf)
+- [デモ](https://food-concierge.web.app/)
 
 # Getting Started with Create React App
 
